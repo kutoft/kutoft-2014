@@ -1,0 +1,540 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size 18px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 700%;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 600;
+    color: #ededed;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 135%;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 125%;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.italic_thin {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* HEADER */
+
+.header_wrap {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.header_bg_wrap {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    position: relative;
+}
+
+.logo_wrap {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 20% 0 0 0;
+    z-index: 100;
+}
+
+.logo_name {
+    text-shadow: 2px 2px 2px #000;
+    width: 80%;
+    margin: auto;
+}
+
+.logo_title {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    float: left;
+    width: 100%;
+    padding: 200px 0 0 0;
+}
+
+
+.button a h3 {
+    width: 250px;
+    max-width: 40%;
+    margin: auto;
+    padding: 15px;
+    background-color: #ededed;
+    font-size: 125%;
+}
+
+.button a h3:hover {
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.header_bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/DeathtoStock_Desk1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .65;
+}
+
+
+/* PROJECTS */
+
+.project {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #555;
+    background-color: #ededed;
+}
+
+.project_last {
+    border-bottom: 1px solid #555;
+}
+
+.p_header {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+.p_header:hover {
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.20);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.p_header_active {
+    background-color: #ffffff;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.p_thumb img {
+    opacity: .35;
+}
+
+.p_header:hover .p_thumb img {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.thumb_active {
+    opacity: 1 !important;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.p_thumb {
+    width: 25%;
+    max-width: 450px;
+    min-width: 125px;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
+
+.p_title_wrap {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.p_title {
+    padding: 20px 10px;
+}
+
+
+.arrow_wrap {
+    display: inline-block;
+    float: right;
+    padding: 20px;
+}
+
+.arrow {
+    width: 35px;
+    height: 35px;
+    background-color: #222;   
+}
+
+.p_content {
+    position: relative;
+    display: none;
+    z-index: -1000;
+    margin: 10px 2%;
+}
+
+.p_active {
+    display: inline-block;
+    z-index: 10;
+    visibility: visible;
+
+}
+
+.arrow_up {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+    margin: auto;
+    position: relative;
+    top: 12px;
+}
+
+.arrow_down {
+    border-bottom: none;
+	border-top: 10px solid #fff;
+    top: 13px;
+}
+
+/* Project Conent */
+
+.p_content p {
+    margin: 10px 0;
+}
+
+.c_full {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.c_left {
+    width: 38%;
+    float: left;
+    margin: 10px 0;
+}
+
+.c_right {
+    width: 58%;
+    float: right;
+    margin: 10px 0;
+}
+
+.r_image {
+    width: 100%;
+    height: 350px; 
+    background-color: #555;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.l_image {
+    width: 100%;
+    height: 350px; 
+    background-color: #555;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.f_image {
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background-color: #555;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bx-wrapper {
+    max-width: 1000px !important;
+}
+
+.skills_wrap {
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 25px;
+}
+
+.software {
+    float: left;
+    display: inline-block;
+}
+
+.skills {
+    float: left;
+    margin-left: 15px;
+}
+
+.skill {
+    display: inline;
+    padding: 0px 2px;
+}
+
+.skill img {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.skill img:hover {
+    transform: rotate(360deg);
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition: all .75s ease-in-out;
+    -o-transition: all .75s ease-in-out;
+    transition: all .75s ease-in-out;   
+}
+
+
+
+
+/* FOOTER */
+
+.footer_wrap {
+    width: 100%;
+    height: 600px;
+    position: relative
+}
+
+.footer {
+    padding: 0 2%;
+    position: absolute;
+    bottom: 25px;
+    z-index: 1000;
+}
+
+.footer > div {
+    margin: 15px 0;
+}
+
+.footer p, h6 {
+    color: #dcdcdc;
+    line-height: 1.40em;
+    padding: 0 15px;
+}
+
+.about {
+    width: 56%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+.about h2 {   
+    margin: 0 0 5px 0;
+    width: 130px;
+}
+
+.about span {
+    font-size: 1.15em;
+    line-height: 1.5em;
+    font-style: italic;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.resume h2 {   
+    margin: 0 0 5px 0;
+    width: 152px;
+}
+
+.resume h2:hover {
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.contact h2 {
+    margin: 0 0 5px 0;
+    width: 175px;
+}
+
+.footer_bg {
+    width: 100%;
+    height: 600px;
+    background: url(../img/DeathtoStock_Wired6.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footer_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .65;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+
+    h3 {
+        font-size: 150%;
+    }
+    .p_title {
+        padding: 23px 10px;
+    }
+    .p_title h3 span {
+        display: none;
+    }
+    .arrow_wrap {
+        padding: 25px 20px;
+    }
+    .arrow {
+        width: 25px;
+        height: 25px;
+    }
+    .arrow_up {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        top: 9px;
+    }
+    .arrow_down {
+        border-bottom: none;
+        border-top: 6px solid #fff; 
+        top: 10px;
+    }
+}
+
+@media (max-width: 721px) {
+
+    .header_bg { 
+        width: 100%;
+        height: 100%;
+        background: url(../img/DeathtoStock_Desk1_mobile.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .footer_bg { 
+        width: 100%;
+        height: 600px;
+        background: url(../img/DeathtoStock_Wired6_mobile.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .logo_wrap {
+        margin: 5% 0 0 0;
+    }
+    .button {
+        padding: 50px 0 0 0;
+    }
+    .arrow_wrap .arrow {
+        display: none;
+    }
+    .p_content {
+        margin: 10px 0px;
+    }
+    .p_content p {
+        font-size: 11px;
+    }
+    .c_left {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .c_right {
+        width: 100%;
+    }
+    .bx-controls-direction {
+        display: none;
+    }  
+    .bx-wrapper .bx-viewport {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .bx-wrapper {
+        margin: 0px auto 30px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    h3 {
+        font-size: 85%;
+    }
+    .p_title {
+        padding: 29px 10px;
+    }
+}
